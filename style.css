@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, black, white);
+  height: 100vh;
+  margin-top: 300px;
+  animation: background-flash 1s infinite;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.turns-name {
+  justify-content: center;
+  text-align: center;
+  font-size: 24px; /* Yazı boyutu */
+  font-weight: bold; /* Kalınlık */
+  color: white; /* Yazı rengi */
+}
+
+.flash {
+  animation: background-flash 1s ease-out;
+}
+.player {
+  background-color: #ffabff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.current-score {
+  margin-top: 10px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.dice {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.5s ease;
+  transform: rotate(45deg) scale(1.5);
+}
+.dice-roll-animation {
+  transform: rotate(90deg); /* Zarı 90 derece döndürelim */
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-new {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-roll {
+  background-color: #008cba;
+  color: white;
+}
