@@ -19,7 +19,13 @@ body {
   font-weight: bold; /* Kalınlık */
   color: white; /* Yazı rengi */
 }
-
+.turns-name2{
+  margin: 40px;
+  font-size: 40px;
+  color: bisque;
+  font-weight: bold;
+  text-align: center;
+}
 .flash {
   animation: background-flash 1s ease-out;
 }
