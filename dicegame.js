@@ -158,7 +158,7 @@ function deletePlayer() {
     alert("you can't delete more players");
     return;
   } else {
-    players.splice(players.length - 1, 1); // ? ChatGpt Burada pop kullanımını önerdi. Hangisini kullanmak daha mantıklı?
+    players.splice(players.length - 1, 1); 
     //console.log("delete");
 
     const playerToRemove = playersContainer.lastChild;
