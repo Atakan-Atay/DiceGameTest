@@ -2,32 +2,55 @@ body {
   font-family: Arial, sans-serif;
   background: linear-gradient(to right, black, white);
   height: 100vh;
-  margin-top: 300px;
+  margin-top: 100px;
   animation: background-flash 1s infinite;
 }
 
 .container {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.players-container {
+  display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 20px;
+  width: 100%;
+  margin-top: 20px;
 }
+
 .turns-name {
   justify-content: center;
   text-align: center;
   font-size: 24px; /* Yazı boyutu */
   font-weight: bold; /* Kalınlık */
   color: white; /* Yazı rengi */
+  background-color: rgba(0, 0, 0, 0.5); ;
 }
-.turns-name2{
+
+.turns-name2 {
   margin: 40px;
   font-size: 40px;
   color: bisque;
   font-weight: bold;
   text-align: center;
 }
-.flash {
-  animation: background-flash 1s ease-out;
+.Scoreboard-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  width: 245px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  padding: 25px;
+  margin-right: 400px;
+  
+}
+.score {
+  padding: 3px;
+  
 }
 .player {
   background-color: #ffabff;
@@ -53,7 +76,13 @@ body {
   height: 100px;
   transition: transform 0.5s ease;
   transform: rotate(45deg) scale(1.5);
+  margin: 100px;
+  width: 100px;
+  height: 100px;
+  transition: transform 0.5s ease;
+  transform: rotate(45deg) scale(1.5);
 }
+
 .dice-roll-animation {
   transform: rotate(90deg); /* Zarı 90 derece döndürelim */
 }
@@ -64,6 +93,7 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .btn-new {
@@ -73,5 +103,10 @@ body {
 
 .btn-roll {
   background-color: #008cba;
+  color: white;
+}
+
+.btn-add {
+  background-color: #ffa500;
   color: white;
 }
